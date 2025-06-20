@@ -16,9 +16,10 @@ public class Complaint implements SuperEntity {
     private String subject;
     private String description;
     private ComplaintStatus complaintStatus;
+    private PriorityType priority;
     private LocalDateTime submittedAt;
     private String adminRemark;
     private LocalDateTime adminRemarkedAt;
-    private int employeeId;
+    private Integer employeeId;
 }
 

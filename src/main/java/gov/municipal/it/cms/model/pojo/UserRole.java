@@ -13,4 +13,12 @@ public enum UserRole {
         this.dbValue = dbValue;
     }
 
+    public static UserRole fromDbValue(String dbValue) {
+        for (UserRole role : UserRole.values()) {
+            if (role.getDbValue().equalsIgnoreCase(dbValue)) {
+                return role;
+            }
+        }
+        throw new IllegalArgumentException("Unknown dbValue: " + dbValue);
+    }
 }

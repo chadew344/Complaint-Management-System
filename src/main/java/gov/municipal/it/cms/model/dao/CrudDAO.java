@@ -14,12 +14,12 @@ public interface CrudDAO<T extends SuperEntity, ID> {
 
     public boolean delete(ID pk) throws SQLException, ClassNotFoundException;
 
-    public List<T> getAll() throws SQLException, ClassNotFoundException, IOException;
+    public List<T> getAll() throws SQLException, ClassNotFoundException;
 
-    public Optional<T> searchById(ID pk) throws SQLException, ClassNotFoundException, IOException;
+    public Optional<T> searchById(ID pk) throws SQLException, ClassNotFoundException;
 
     public Optional<String>  getLastPK() throws SQLException, ClassNotFoundException;
 
-    public List<String> getAllIds() throws SQLException, ClassNotFoundException, IOException;
+    public List<String> getAllIds() throws SQLException, ClassNotFoundException;
 
 }
